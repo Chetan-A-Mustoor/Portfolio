@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Chetan A Mustoor Developer</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: "ESgF6wWAs9I8nzUHZ",
+            });
+        })();
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_dzbty5s', 'template_cgr6yzy', this)
+                    .then(() => {
+                        swal("Successful", "Email sent successfully!", "success");
+                        document.getElementById('contact-form').reset();
+
+                    }, (error) => {
+                        swal("Error", "Failed to send the email. Please try again.", "error");
+                    });
+            });
+        }
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">Chetan Mustoor</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="#home" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#experience" class="nav-item nav-link">Experience</a>
+                    <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
+                    <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                    <a href="#contact" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+
+    <!-- Hero Start -->
+    <div class="hero" id="home">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <p>Hi, I'm</p>
+                            <h1>Chetan A Mustoor</h1>
+                            <h2></h2>
+                            <div class="typed-text">
+                                <span style="color: black;">a</span> Full Stack Developer
+                            </div>
+                        </div>
+                        <div class="hero-btn">
+                            <a class="btn"
+                                href="https://drive.google.com/uc?export=download&id=14KU3wmjSKLtt1_Zm_YtJXSFS3G6amAP3"
+                                download>Download Resume</a>
+                        </div>
+                        <div class="main-social">
+                            <a href="https://github.com/Chetan-A-Mustoor"><i class="fab fa-github"></i></a>
+                            <a href="https://www.youtube.com/@chetanmustoor2396"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/chetanmustoor14/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/chetan-mustoor/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 d-none d-md-block">
+                    <!-- <div class="hero-image">
+                        <img src="img/hero.png" alt="Hero Image">
+                    </div> -->
+                    <div class="hero-image" style="width: 450px; margin-left: 100px;">
+                        <img src="img/hero.png" alt="Hero Image"
+                            style="width: 400px; height: 450px; border-radius: 100%;background-color: rgba(255, 255, 255, 0.2); border: none">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- About Start -->
+    <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="section-header text-left">
+                        <p>Learn About Me</p>
+                        <h2>3 Years Experience</h2>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            I am Chetan A Mustoor, living in Bengaluru and working as a Senior Developer at Ingroinfo
+                            Software Solution Pvt. Ltd. As a self-taught programmer with a Master of Computer
+                            Applications (MCA) from AMC Engineering College, I specialize in both front-end and back-end
+                            development. I am passionate about contributing to communities and open-source projects,
+                            continuously striving to enhance my practical expertise. At Ingroinfo, I focus on delivering
+                            high-quality solutions, and I remain committed to personal and professional growth within
+                            the tech industry.
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="about-content">
+                        <div class="skills">
+                            <div class="skill-name">
+                                <p>HTML</p>
+                                <p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>CSS</p>
+                                <p>95%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Java</p>
+                                <p>75%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Java Script</p>
+                                <p>70%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Git & Github</p>
+                                <p>60%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Angular</p>
+                                <p>30%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Spring Boot</p>
+                                <p>75%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Basic AWS</p>
+                                <p>30%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Experience Start -->
+    <div class="experience" id="experience">
+        <div class="container">
+            <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>My Resume</p>
+                <h2>Working Experience</h2>
+            </header>
+            <div class="timeline">
+                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <h2>UBARMS</h2>
+                        <h4>Utility Billing, Accounting and Revenue Management Solution</h4>
+                        <p>
+                            Ubarms is a water billing project designed to enhance the efficiency of water services by
+                            automating consumption tracking, bill generation, payment processing, and customer service
+                            management. It has improved transparency, streamlined operations, and increased customer
+                            satisfaction through better data accuracy.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <h2>VTS</h2>
+                        <h4>Vehicle Tracking System</h4>
+                        <p>
+                            We develop GPS-based tracking systems for vehicles, assets, and personal monitoring,
+                            providing reliable and high-quality solutions for both customers and distributors. Our
+                            compact devices with built-in antennas are ideal for real-time tracking in areas like fleet
+                            management, logistics, taxi services, and asset tracking. Their small size makes them
+                            perfect for hidden installations.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <h2>Maintenance Management</h2>
+                        <h4>Maintenance Management</h4>
+                        <p>
+                            The Maintenance Management system ensures efficient upkeep of infrastructure, pipelines, and
+                            equipment for water billing operations. It covers all maintenance activities from
+                            construction to billing while managing inventory for related products. This integration
+                            ensures seamless service operations and effective inventory management.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <h2>Survey</h2>
+                        <h4>Door to Door Survey</h4>
+                        <p>
+                            The "Survey" project is a website for efficient door-to-door data collection using digital
+                            forms. It streamlines the process with real-time data syncing, making it ideal for
+                            demographic, market, or social research, ensuring accurate and organized data analysis.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <h2>Smart Pipe 360</h2>
+                        <h4>Pipe 360</h4>
+                        <p>
+                            Smart Pipe 360 is a comprehensive system for managing the lifecycle of pipe construction
+                            projects, integrating stock management, construction tracking, safety monitoring, and GIS
+                            mapping. It offers real-time stock tracking with low-stock alerts and automated procurement,
+                            along with live updates on construction progress for efficient resource use and timeline
+                            management.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <h2>Akshara Shastra(Static Web Site)</h2>
+                        <h4>Static Web Site</h4>
+                        <p>
+                            "Akshara Shastra," researched by A Dayanand Kotyan from Udupi district, is a unique study of
+                            names that aims to solve past problems and improve the present by modifying or strengthening
+                            the letters in one's name. Since 2016, over 12,000 people have benefitted from this
+                            non-astrological method, which doesn't require any legal name change but offers a simple,
+                            effective way to enhance life and status.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Job Experience End -->
+
+
+
+
+
+    <!-- Testimonial Start -->
+    <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="testimonial">
+        <div class="container">
+
+            <div class="owl-carousel testimonials-carousel">
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="img/sharat_image.webp" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            It's impressive how he's contributing to the community—keep up the great work! His curiosity
+                            and passion for AI are inspiring. He's eager to continue learning and exploring this
+                            exciting field.
+                        </p>
+                        <h3>Sharat Sahoo</h3>
+                        <h4>Full Stack Developer</h4>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="img/khaleel.webp" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            Chetan is a calm, talented individual with a great deal of enthusiasm. His persistent
+                            efforts in various tasks consistently highlight his strengths and abilities. His dedication
+                            inspires others to see the best in him.
+                        </p>
+                        <h3>Khaleel Gibran</h3>
+                        <h4>Android Developer</h4>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="img/rikesh.webp" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            His commitment to producing top-notch code and his sharp problem-solving skills make him an
+                            essential part of any team. His reliability and expertise consistently drive results. He's a
+                            valuable contributor wherever he goes. </p>
+                        <h3>Rikesh Kumar</h3>
+                        <h4>Full Stack Developer</h4>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="img/Ankitha.jpg" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            A passionate and dedicated individual, always eager to take on new challenges and grow. I
+                            wish the best in all future endeavors, as they continue to excel and succeed. May they find
+                            new opportunities that propel them forward in life.
+                        </p>
+                        <h3>Ankitha Kalsi</h3>
+                        <h4>Asst manager IT</h4>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="img/Dinesh.jpg" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            His passion for learning and contributing to communities is truly inspiring. At this stage,
+                            he's already demonstrating impressive skills in web design. His dedication to growth and
+                            helping others sets him apart.
+                        </p>
+                        <h3>Dinesh Kumar</h3>
+                        <h4>Full Stack Developer</h4>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="img/akash.jpg" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            Clients and colleagues have greatly benefited from his expertise in development. His
+                            meticulous approach to coding and dedication to ensuring project success make him an
+                            indispensable asset. His work consistently delivers outstanding results.
+                        </p>
+                        <h3>Akash Bohi</h3>
+                        <h4>Senior Test Engineer</h4>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="img/Niher.jpg" alt="Image" style="height: 200px;">
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            His meticulous approach and ability to write efficient code greatly enhance the success of
+                            our software projects. I wholeheartedly endorse him for any development task. His expertise
+                            and dedication make him a reliable choice for any team.
+                        </p>
+                        <h3>Nihar Ranjan Patra</h3>
+                        <h4>Front-end developer</h4>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-img">
+                        <img src="img/mithun.jpg" alt="Image">
+                    </div>
+                    <div class="testimonial-text">
+                        <p>
+                            Chetan is a calm and talented individual, full of enthusiasm. His consistent efforts in
+                            everything he does showcase his strengths. His dedication inspires others to recognize the
+                            best in him.
+                        </p>
+                        <h3>Mithun</h3>
+                        <h4>UI/UX Developer</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Portfolio Start -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>My Portfolio</p>
+                <h2>My Excellent Portfolio</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul id="portfolio-filter">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-1">Web App Design</li>
+                        <li data-filter=".filter-2">Static Website</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/ubarms.jpg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>UBARMS</h3>
+                            <a class="btn" href="img/ubarms.jpg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/vehicle.jpg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Vehicle Tracking System</h3>
+                            <a class="btn" href="img/vehicle.jpg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/survey.jpg" alt="Image" style="height: 230px;">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Survey(Door to Door)</h3>
+                            <a class="btn" href="img/survey.jpg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/maintenance_management.jpg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Maintenance Management </h3>
+                            <a class="btn" href="img/maintenance_management.jpg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/smart_pipe.jpg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Smart Pipe 360</h3>
+                            <a class="btn" href="img/smart_pipe.jpg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="1s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/Akshara_Shastra_Logo.png" alt="Image" style="height: 260px;">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Akshara Shastra</h3>
+                            <a class="btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+
+    <!-- Contact Start -->
+    <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <div class="contact-form">
+                            <div id="success"></div>
+                            <form name="sentMessage" id="contact-form" novalidate="novalidate">
+                                <div class="control-group">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name"
+                                        name="from_name" required="required"
+                                        data-validation-required-message="Please enter your name" />
+                                    <p class="help-block"></p>
+                                </div>
+                                <div class="control-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email"
+                                        name="from_email" required="required"
+                                        data-validation-required-message="Please enter your email" />
+                                    <p class="help-block"></p>
+                                </div>
+                                <div class="control-group">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject"
+                                        name="subject" required="required"
+                                        data-validation-required-message="Please enter a subject" />
+                                    <p class="help-block"></p>
+                                </div>
+                                <div class="control-group">
+                                    <textarea class="form-control" id="message" placeholder="Message" name="message"
+                                        required="required"
+                                        data-validation-required-message="Please enter your message"></textarea>
+                                    <p class="help-block"></p>
+                                </div>
+                                <div>
+                                    <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="footer-info">
+                    <h2>Chetan A Mustoor</h2>
+                    <h3>Amruthnagar, Bengaluru, Karnataka 560092</h3>
+                    <div class="footer-menu">
+                        <p>+91 9916180147</p>
+                        <p>chetanmustoor14@gmail.com</p>
+                    </div>
+                    <div class="footer-social ">
+                        <a href="https://github.com/Chetan-A-Mustoor"><i class="fab fa-github"></i></a>
+                        <a href="https://www.youtube.com/@chetanmustoor2396"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/chetanmustoor14/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/chetan-mustoor/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright">
+                <p>&copy; <a href="index.html">Chetan A Mustoor</a>, All Right Reserved |
+
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a>CM Developer</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+        <div class="loader"></div>
+    </div>
+
+    <!-- whatsapp start -->
+
+    <a class="what" href="https://wa.me/919916180147?text=Hi%20Message to Chetan A Mustoor" style="
+    position: fixed;
+    width:40px;
+    height: 40px;
+    bottom: 70px;
+    right: 50px;
+    z-index: 900;
+    color: #fff;
+    border-radius:50px;
+    text-align:center;
+    cursor:pointer;
+    box-shadow: 2px 2px 3px #999;">
+        <img src="img/whatsapp.png" height="50px" width="50px" />
+
+    </a>
+    <!-- whatsapp end -->
+
+
+    <!-- Back to top button -->
+    <a href="#" class="btn back-to-top" style="border-radius:50px" ;><i class="fa fa-chevron-up"></i></a>
+
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+</body>
+
+</html>
